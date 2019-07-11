@@ -1,0 +1,17 @@
+{
+    "name": "rijojoy/restcountries-api",
+    "description": "REST Countries API",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Rijo Joy",
+            "email": "rijojoy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\":"./inc","Templates\\":"./templates"}
+    }
+}
