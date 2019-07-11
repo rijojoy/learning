@@ -13,12 +13,14 @@ jQuery(function(){
                         	    countryOb.text = data[item].name;
                         	countryArr.push(countryOb);
                         }
+                        var countryVal = (jQuery("#country_val").val() == '')?'Afghanistan':jQuery("#country_val").val();
                         jQuery("#countries_list").select2(
 		                        	{ 
 		                        		width: "200px",
-		                        		data: countryArr 
+		                        		data: countryArr
 		                        	}
-                        	);
+                        	).val(countryVal).trigger('change');
+                        //jQuery("#countries_list").select2("val","India");
 
 		}
 	});	

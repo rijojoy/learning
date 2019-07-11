@@ -22,6 +22,7 @@ class CustomFields {
             <td>
 	            <select style="width: 100px" name="country_name" id="countries_list">
 	            </select>
+	            <input type="hidden" name="country_val" id="country_val" value="<?php echo $countryName ?>">
             </td>
         </tr>
         <tr>
